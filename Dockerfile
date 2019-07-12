@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM cirrusci/flutter:v1.5.4-hotfix.2
 
 # To make it easier for build and release pipelines to run apt-get,
 # configure apt to not require confirmation (assume the -y argument by default)
