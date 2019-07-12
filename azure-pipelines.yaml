@@ -1,0 +1,9 @@
+jobs:
+  - job: build and push
+    pool:
+      vmImage: 'ubuntu-16.04'
+
+    steps:
+      - script: |
+          docker build -t amond/azure-docker-agent .
+          docker push amond/azure-docker-agent
