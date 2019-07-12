@@ -5,8 +5,8 @@ jobs:
 
     steps:
       - task: Docker@2
-          inputs:
-            containerRegistry: 'docker hub'
-            repository: 'amond/azure-docker-agent'
-            command: 'buildAndPush'
-            Dockerfile: 'Dockerfile'
+        inputs:
+          containerRegistry: 'docker hub'
+          repository: 'amond/azure-docker-agent'
+          command: 'buildAndPush'
+          Dockerfile: 'Dockerfile'
